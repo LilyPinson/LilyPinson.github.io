@@ -205,6 +205,30 @@ a:hover {
     text-align: justify; /* Justify text for better readability */
 }
 
+.contact-section {
+    background-color: rgba(10, 61, 98, 0.8); /* Deep sea blue with transparency */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Subtle shadow for depth */
+    margin: 20px auto;
+    max-width: 800px;
+    text-align: center;
+    animation: fadeIn 1.5s ease-in-out; /* Add fade-in animation */
+}
+
+.contact-section p {
+    color: #dcdde1; /* Light grey */
+    font-size: 1.1em;
+    margin: 10px 0;
+}
+
+.contact-section i {
+    margin-right: 10px; /* Add spacing between the icon and the text */
+    color: #82ccdd; /* Match the icon color with the theme */
+    font-size: 1.2em; /* Slightly larger icon size */
+    vertical-align: middle; /* Align icons with text */
+}
+
 footer {
     text-align: center;
     padding: 10px;
@@ -218,7 +242,7 @@ footer {
     z-index: 1;
 }
 
-.content-wrapper {
+content-wrapper {
     background-color: rgba(10, 61, 98, 0.8); /* Deep sea blue with transparency */
     backdrop-filter: blur(10px); /* Blur effect */
     border-radius: 10px;
@@ -289,6 +313,34 @@ button {
 button:hover {
     background-color: #60a3bc; /* Muted blue on hover */
     transform: scale(1.1); /* Slight zoom effect */
+}
+
+.header-block {
+    background-color: #3c6382; /* Solid darker blue-grey background */
+    padding: 20px 0;
+    width: 100%; /* Stretch the block to the full width of the page */
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Subtle shadow for depth */
+    margin-bottom: 20px;
+    border-radius: 0; /* Remove rounded corners */
+}
+
+.portfolio-section, .skills-section {
+    background-color: rgba(10, 61, 98, 0.8); /* Deep sea blue with transparency */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Subtle shadow for depth */
+    margin: 20px auto;
+    max-width: 800px;
+    text-align: center;
+    animation: fadeIn 1.5s ease-in-out; /* Add fade-in animation */
+}
+
+.skill-description {
+    margin-top: 10px;
+    font-size: 0.9em;
+    color: #a4abc6; /* Light grey */
+    text-align: justify; /* Justify text for better readability */
 }
 
 @keyframes fadeIn {

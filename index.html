@@ -2,71 +2,130 @@
 
 <head>
     <title>Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1"> <!-- Responsive meta tag -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Font Awesome -->
 </head>
 
 <body>
-    <nav class="navbar">
-        <ul>
-            <li><a href="#about">About Me</a></li>
-            <li><a href="#portfolio">Portfolio</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
-    <div class="content-wrapper">
-        <h1>Lily Pinson</h1>
-        <h3>Hello! I'm Lily, a passionate Artist and Game Designer. Welcome to my portfolio website, where you can learn
-            more about me, my projects, and how to get in touch.</h3>
-        <hr>
-
-        <h2 id="about">About Me</h2>
-        <div class="about-section">
-            <img src="profile.jpg" alt="Profile Picture" width="200">
-            <div>
-                <h3>My Passion for Art and Storytelling</h3>
-                <p>Art and storytelling have always been at the core of who I am. From the moment I could hold a pencil,
-                    I was captivated by the power of visual storytelling. My journey as an artist has been a continuous
-                    exploration of creativity, where I strive to create immersive experiences that resonate with people
-                    on a deeper level. I often find inspiration in the world around me, often pulling emotional
-                    connection and
-                    meaning from the mundane. I believe that art has the ability to transcend boundaries and connect us
-                    all.</p>
-
-                <h3>Art In The Technical</h3>
-                <p>In the past few years, I have delved into the world of game design, where I have discovered a new
-                    dimension to my artistic expression. Game design allows me to combine my love for art with my
-                    passion for storytelling, creating interactive experiences that engage and captivate players. I am
-                    constantly exploring new techniques and technologies to push the boundaries of what is possible in
-                    game design, always striving to create unique and memorable experiences while still connecting with
-                    my own personal art.</p>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Lily Pinson</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item"><a class="nav-link" href="#about">About Me</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
             </div>
         </div>
-        <hr>
+    </nav>
+    <div class="container mt-5">
+        <div class="content-wrapper">
+            <div class="header-block">
+                <h1 class="text-center">Lily Pinson</h1>
+                <h3 class="text-center">Hello! I'm Lily, a passionate Artist and Game Designer. Welcome to my portfolio
+                    website, where you can learn more about me, my projects, and how to get in touch.</h3>
+            </div>
+            <hr>
 
-        <h2 id="portfolio">Portfolio</h2>
-        <p>Here are some of my projects:</p>
-        <ul>
-            <li><a href="https://loremipsum.io/" target="_blank">Project 1</a> - Lorem ipsum dolor sit amet.</li>
-            <li><a href="https://loremipsum.io/" target="_blank">Project 2</a> - Consectetur adipiscing elit.</li>
-            <li><a href="https://loremipsum.io/" target="_blank">Project 3</a> - Sed do eiusmod tempor incididunt.</li>
-        </ul>
-        <hr>
+            <h2 id="about" class="text-center">About Me</h2>
+            <div class="about-section row">
+                <div class="col-md-4 text-center">
+                    <img src="profile.jpg" alt="Profile Picture" class="img-fluid rounded-circle">
+                </div>
+                <div class="col-md-8">
+                    <h3>My Passion for Art and Storytelling</h3>
+                    <p>Art and storytelling have always been at the core of who I am. From the moment I could hold a
+                        pencil, I was captivated by the power of visual storytelling. My journey as an artist has been a
+                        continuous exploration of creativity, where I strive to create immersive experiences that
+                        resonate with people on a deeper level. I often find inspiration in the world around me, often
+                        pulling emotional connection and meaning from the mundane. I believe that art has the ability to
+                        transcend boundaries and connect us all.</p>
 
-        <h2 id="skills">Skills</h2>
-        <ul>
-            <li><i class="fab fa-html5"></i> HTML & CSS</li>
-            <li><i class="fab fa-js"></i> JavaScript</li>
-            <li><i class="fab fa-react"></i> React</li>
-            <li><i class="fab fa-node-js"></i> Node.js</li>
-        </ul>
-        <hr>
+                    <h3>Art In The Technical</h3>
+                    <p>In the past few years, I have delved into the world of game design, where I have discovered a new
+                        dimension to my artistic expression. Game design allows me to combine my love for art with my
+                        passion for storytelling, creating interactive experiences that engage and captivate players. I
+                        am constantly exploring new techniques and technologies to push the boundaries of what is
+                        possible in game design, always striving to create unique and memorable experiences while still
+                        connecting with my own personal art.</p>
+                </div>
+            </div>
+            <hr>
 
-        <h2 id="contact">Contact</h2>
-        <p>Email: <a href="mailto:lily@example.com">lily@example.com</a></p>
-        <p>Resume: <a href="resume.pdf" target="_blank">Download my resume</a></p>
+            <div class="portfolio-section">
+                <h2 id="portfolio" class="text-center">Portfolio</h2>
+                <p class="text-center">Here are some of my projects:</p>
+                <ul class="list-group">
+                    <li class="list-group-item"><a href="https://loremipsum.io/" target="_blank">Project 1</a> - Lorem
+                        ipsum dolor sit amet.</li>
+                    <li class="list-group-item"><a href="https://loremipsum.io/" target="_blank">Project 2</a> -
+                        Consectetur adipiscing elit.</li>
+                    <li class="list-group-item"><a href="https://loremipsum.io/" target="_blank">Project 3</a> - Sed do
+                        eiusmod tempor incididunt.</li>
+                </ul>
+            </div>
+            <hr>
+
+            <div class="skills-section">
+                <h2 id="skills" class="text-center">Skills</h2>
+                <ul class="list-group">
+                    <li class="list-group-item">
+                        <i class="fas fa-paint-brush"></i> 2D Art
+                        <p class="skill-description">I have a strong foundation in 2D art, specializing in creating
+                            visually appealing illustrations and concept art for games and storytelling projects. I have 
+                            been a long time artist, particularly specializing in concept art for 3D games.</p>
+                    </li>
+                    <li class="list-group-item">
+                        <i class="fas fa-pencil-alt"></i> Design
+                        <p class="skill-description">My design skills include creating user-friendly interfaces,
+                            layouts, and assets that enhance the overall user experience. I prioritize functionality and 
+                            practicality in my creative designs. </p>
+                    </li>
+                    <li class="list-group-item">
+                        <i class="fas fa-film"></i> Animation
+                        <p class="skill-description">I have experience in 2D animation, bringing characters and
+                            environments to life with smooth and engaging motion. For several years, I have practiced 
+                            2D animation and storytelling.</p>
+                    </li>
+                    <li class="list-group-item">
+                        <i class="fas fa-laptop-code"></i> Web Development
+                        <p class="skill-description">I have experience working with HTML, CSS, and JavaScript, building responsive
+                            and visually appealing websites with clean and maintainable code. I also create interactive
+                            and dynamic web applications using modern frameworks and libraries.</p>
+                    </li>
+                    <li class="list-group-item">
+                        <i class="fas fa-gamepad"></i> Game Development
+                        <p class="skill-description">I have utilized both Unity and Unreal Engine for game development, leveraging their capabilities to
+                            create interactive gameplay mechanics and systems. My experience includes designing and
+                            implementing engaging game features.</p>
+                    </li>
+                </ul>
+            </div>
+            <hr>
+
+            <h2 id="contact" class="text-center">Contact</h2>
+            <div class="contact-section text-center">
+                <p><i class="fas fa-envelope"></i> Email: <a href="mailto:lily@example.com">lily@example.com</a></p>
+                <p><i class="fas fa-file-alt"></i> Resume: <a href="resume.pdf" target="_blank">Download my resume</a>
+                </p>
+                <p><i class="fas fa-phone"></i> Phone: (123) 456-7890</p>
+                <p><i class="fab fa-linkedin"></i> LinkedIn: <a href="https://linkedin.com/in/lily-pinson"
+                        target="_blank">linkedin.com/in/lily-pinson</a></p>
+            </div>
+        </div>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Bootstrap JS -->
 </body>
 
 </html>
