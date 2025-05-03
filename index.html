@@ -1,42 +1,72 @@
 <html>
-    <head>
-        <title>Portfolio</title>
-        <link rel="stylesheet" href="styles.css">
-    </head>
-    <body>
-        <div class="content-wrapper">
-            <h1>Lily Pinson</h1>
-            <p>Hello! I'm Lily, a passionate developer. Welcome to my portfolio website where you can learn more about me, my projects, and how to get in touch.</p>
-            <hr>
 
-            <h2>About Me</h2>
-            <div class="about-section">
-                <img src="profile.jpg" alt="Profile Picture" width="200">
-                <p>I am a software developer with a love for creating innovative solutions. I specialize in web development and enjoy working on challenging projects.</p>
+<head>
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> <!-- Font Awesome -->
+</head>
+
+<body>
+    <nav class="navbar">
+        <ul>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    <div class="content-wrapper">
+        <h1>Lily Pinson</h1>
+        <h3>Hello! I'm Lily, a passionate Artist and Game Designer. Welcome to my portfolio website, where you can learn
+            more about me, my projects, and how to get in touch.</h3>
+        <hr>
+
+        <h2 id="about">About Me</h2>
+        <div class="about-section">
+            <img src="profile.jpg" alt="Profile Picture" width="200">
+            <div>
+                <h3>My Passion for Art and Storytelling</h3>
+                <p>Art and storytelling have always been at the core of who I am. From the moment I could hold a pencil,
+                    I was captivated by the power of visual storytelling. My journey as an artist has been a continuous
+                    exploration of creativity, where I strive to create immersive experiences that resonate with people
+                    on a deeper level. I often find inspiration in the world around me, often pulling emotional
+                    connection and
+                    meaning from the mundane. I believe that art has the ability to transcend boundaries and connect us
+                    all.</p>
+
+                <h3>Art In The Technical</h3>
+                <p>In the past few years, I have delved into the world of game design, where I have discovered a new
+                    dimension to my artistic expression. Game design allows me to combine my love for art with my
+                    passion for storytelling, creating interactive experiences that engage and captivate players. I am
+                    constantly exploring new techniques and technologies to push the boundaries of what is possible in
+                    game design, always striving to create unique and memorable experiences while still connecting with
+                    my own personal art.</p>
             </div>
-            <hr>
-
-            <h2>Portfolio</h2>
-            <p>Here are some of my projects:</p>
-            <ul>
-                <li><a href="https://loremipsum.io/" target="_blank">Project 1</a> - Lorem ipsum dolor sit amet.</li>
-                <li><a href="https://loremipsum.io/" target="_blank">Project 2</a> - Consectetur adipiscing elit.</li>
-                <li><a href="https://loremipsum.io/" target="_blank">Project 3</a> - Sed do eiusmod tempor incididunt.</li>
-            </ul>
-            <hr>
-
-            <h2>Skills</h2>
-            <ul>
-                <li>HTML & CSS</li>
-                <li>JavaScript</li>
-                <li>React</li>
-                <li>Node.js</li>
-            </ul>
-            <hr>
-
-            <h2>Contact</h2>
-            <p>Email: <a href="mailto:lily@example.com">lily@example.com</a></p>
-            <p>Resume: <a href="resume.pdf" target="_blank">Download my resume</a></p>
         </div>
-    </body>
+        <hr>
+
+        <h2 id="portfolio">Portfolio</h2>
+        <p>Here are some of my projects:</p>
+        <ul>
+            <li><a href="https://loremipsum.io/" target="_blank">Project 1</a> - Lorem ipsum dolor sit amet.</li>
+            <li><a href="https://loremipsum.io/" target="_blank">Project 2</a> - Consectetur adipiscing elit.</li>
+            <li><a href="https://loremipsum.io/" target="_blank">Project 3</a> - Sed do eiusmod tempor incididunt.</li>
+        </ul>
+        <hr>
+
+        <h2 id="skills">Skills</h2>
+        <ul>
+            <li><i class="fab fa-html5"></i> HTML & CSS</li>
+            <li><i class="fab fa-js"></i> JavaScript</li>
+            <li><i class="fab fa-react"></i> React</li>
+            <li><i class="fab fa-node-js"></i> Node.js</li>
+        </ul>
+        <hr>
+
+        <h2 id="contact">Contact</h2>
+        <p>Email: <a href="mailto:lily@example.com">lily@example.com</a></p>
+        <p>Resume: <a href="resume.pdf" target="_blank">Download my resume</a></p>
+    </div>
+</body>
+
 </html>
