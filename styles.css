@@ -160,7 +160,7 @@ a:hover {
     align-items: center; /* Center content horizontally */
     text-align: center; /* Ensure text is centered */
     gap: 20px;
-    max-width: 800px;
+    max-width: 800px; 
     margin: 20px auto;
     position: relative; /* Ensure content is above the overlay */
     z-index: 1;
@@ -202,7 +202,7 @@ a:hover {
     color: #dcdde1; /* Light grey */
     font-size: 1.1em;
     line-height: 1.8;
-    text-align: justify; /* Justify text for better readability */
+    /*text-align: justify; /* Justify text for better readability */
 }
 
 .contact-section {
@@ -396,6 +396,12 @@ button:hover {
     border-radius: 10px;
     transition: transform 0.3s ease; /* Smooth zoom effect */
     z-index: 1; /* Ensure it is below the description */
+}
+
+.main-wrapper {
+    background-color: #124a71; /* Solid dark blue background */
+    min-height: 100vh; /* Ensure it covers the full viewport height */
+    padding: 20px 0; /* Add some padding around the content */
 }
 
 @keyframes fadeIn {
